@@ -32,31 +32,29 @@
 			</titleHead>
 			<table class="table table-hover">
 			  <thead>
-			    <tr>
-			      <th scope="col">#</th>
-			      <th scope="col">First</th>
-			      <th scope="col">Last</th>
-			      <th scope="col">Handle</th>
+			  	
+			  	<tr>
+			      <th scope="col">Nomer Anda</th>
+			      <th scope="col">Nama Anda</th>
+			      <th scope="col">NIK Anda</th>
+			      <th scope="col">Nomer BPJS</th>
+			      <th scope="col">Tempat Tanggal Lahir</th>
+			      <th scope="col">Alamat</th>
 			    </tr>
+			  	 
 			  </thead>
 			  <tbody>
+			  	<?php foreach ( $daftar as $dft ) : ?>
 			    <tr>
-			      <th scope="row">1</th>
-			      <td>Mark</td>
-			      <td>Otto</td>
-			      <td>@mdo</td>
+			      <th><?php echo $dft['id_user'];?></th>
+			      <td><?=  $dft['nama_user'];?></td>
+			      <td><?=  $dft['nik_user'];?></td>
+			      <td><?=  $dft['no_bpjs'];?></td>
+			      <td><?=  $dft['ttl'];?></td>
+			      <td><?=  $dft['alamat'];?></td>
 			    </tr>
-			    <tr>
-			      <th scope="row">2</th>
-			      <td>Jacob</td>
-			      <td>Thornton</td>
-			      <td>@fat</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td colspan="2">Larry the Bird</td>
-			      <td>@twitter</td>
-			    </tr>
+			    <?php endforeach; ?>
+			   
 			  </tbody>
 			</table>
 		</div>
