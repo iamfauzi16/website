@@ -6,3 +6,17 @@ body {
 h1.titleUtama.text-center {
     padding-bottom: 40px;
 }
+
+button.btn.btn-primary {
+    margin: 5px;
+}
+
+
+@media (max-width: 575.98px) {
+
+	button.btn.btn-primary {
+    margin: 10px;
+}
+
+
+}
